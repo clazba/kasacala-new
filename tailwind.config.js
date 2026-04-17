@@ -10,7 +10,7 @@ export default {
         // Core Palette (Near black, terracotta, olive)
         background: "#141310", // The deep, obsidian-olive foundation
         surface: "#141310",
-        
+
         // Surface Hierarchy & Nesting (The "No-Line" Rule Layering)
         surface: {
           lowest: "#0f0e0a",
@@ -23,14 +23,14 @@ export default {
           variant: "#363530", // For Glass & Gradients (60% opacity with 24px backdrop-blur)
           tint: "#fbb79e"
         },
-        
+
         primary: {
           DEFAULT: "#fbb79e", // Terracotta
           container: "#3e1808", // Clay depth
           fixed: "#ffdbcf",
           "fixed-dim": "#fbb79e",
         },
-        
+
         secondary: {
           DEFAULT: "#cdc6b1", // Olive tint / Sand
           container: "#4d4939",
@@ -77,11 +77,10 @@ export default {
         }
       },
       fontFamily: {
-        // Editorial Authority Typography Rules
-        display: ['Newsreader', 'serif'],  // High-contrast serif for headlines
-        headline: ['Newsreader', 'serif'], // High-contrast serif "Hero"
-        body: ['Manrope', 'sans-serif'],   // Clean, modern workhorse
-        label: ['Inter', 'sans-serif'],    // Technical, architectural precision
+        display: ['"Instrument Serif"', 'serif'],
+        headline: ['"Manrope"', 'sans-serif'],
+        body: ['"Manrope"', 'sans-serif'],
+        label: ['"Inter"', 'sans-serif'],
       },
       letterSpacing: {
         widest: '0.15em', // For Labels & Buttons
@@ -93,6 +92,7 @@ export default {
         // Generous scale to mimic open air
         16: '1rem',
         24: '1.5rem',
+        26: '2rem',
         48: '3rem',
       },
       borderRadius: {

@@ -13,7 +13,7 @@ export function SplashPage() {
 
         <header className="w-full flex justify-center pt-12 md:pt-20 px-8 z-10">
           <div className="flex items-center justify-center animate-fade-in-up">
-            <CasaKalaLogo className="text-on-surface h-10 md:h-24 w-auto object-contain" />
+            <CasaKalaLogo className="text-on-surface h-12 md:h-28 w-auto object-contain" />
           </div>
         </header>
 
@@ -24,11 +24,6 @@ export function SplashPage() {
             One site,<br />
             <span className="italic text-primary">multiple souls.</span>
           </h2>
-
-          {/* Static text utilizing the H3 version of the headline font (Newsreader italic) */}
-          <nav className="mt-16 flex flex-wrap justify-center gap-6 md:gap-12 font-headline italic text-2xl md:text-3xl text-on-surface-variant">
-            <span>Work...Play...Create...Connect</span>
-          </nav>
         </main>
 
         {/* Footer / Scroll Indicator: Semantic footer */}

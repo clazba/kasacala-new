@@ -35,7 +35,7 @@ To introduce the "hi-tech edge," use **Glassmorphism** for navigation bars and f
 ## 3. Typography: Editorial Authority
 The typography is the voice of the system. It must feel high-contrast and authoritative.
 
-- **Display & Headlines (Newsreader):** This high-contrast serif is our "Hero." Use `display-lg` for impactful statements. **Design Note:** Use *selective italics* for one or two words in a headline to emphasize the "Editorial" feel (e.g., "The *Art* of Creation").
+- **Display & Headlines (Outfit):** This high-contrast serif is our "Hero." Use `display-lg` for impactful statements. **Design Note:** Use *selective italics* for one or two words in a headline to emphasize the "Editorial" feel (e.g., "The *Art* of Creation").
 - **Body (Manrope):** Our workhorse. It is clean, modern, and stays out of the way. Maintain generous line height (1.6) to ensure the "sun-drenched" airy feel.
 - **Labels & Buttons (Inter):** Small, all-caps, and tracked out (`letter-spacing: 0.15em`). This provides a technical, architectural precision that balances the organic serif.
 

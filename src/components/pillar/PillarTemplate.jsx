@@ -24,7 +24,6 @@ export function PillarTemplate({ pillarName, title, excerpt, introText, introIma
               Atmosphere: {excerpt}
             </p>
             <div className="font-label text-xs uppercase tracking-widest font-bold text-on-background/60 hover:text-primary transition-colors flex items-center gap-4 cursor-pointer">
-              <span>Scroll to Explore</span>
               <span className="material-symbols-outlined text-sm">south</span>
             </div>
           </div>
