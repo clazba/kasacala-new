@@ -5,7 +5,7 @@ export function TopNavBar() {
   return (
     <nav className="fixed top-0 w-full bg-background/60 backdrop-blur-xl z-50 flex justify-between items-center px-12 py-8 transition-colors duration-500">
       <div className="flex items-center justify-center">
-        <CasaKalaLogo className="text-on-surface h-20 md:h-32 w-auto object-contain" />
+        <CasaKalaLogo className="text-on-surface h-24 md:h-32 w-auto object-contain" />
       </div>
 
       {/* Hidden layout elements unwrap to list at larger MD scale */}
