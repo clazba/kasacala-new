@@ -122,8 +122,13 @@ const MainLayout = ({ children }) => (
 );
 
 const MenuLayout = ({ children }) => (
-  <div className="bg-background min-h-screen text-on-surface flex flex-col justify-center">
-    <TopNavBar />
+  <div className="bg-background min-h-screen text-on-surface flex flex-col md:justify-center pt-24 md:pt-0 pb-12 md:pb-0">
+    <div className="block md:hidden">
+      <BurgerMenu />
+    </div>
+    <div className="hidden md:block">
+      <TopNavBar />
+    </div>
     {children}
   </div>
 );

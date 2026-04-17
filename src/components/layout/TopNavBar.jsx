@@ -13,7 +13,7 @@ export function TopNavBar() {
         <a className="text-primary border-b border-primary/30 pb-1 uppercase tracking-widest text-xs transition-colors duration-500" href="#">Spaces</a>
         <a className="text-on-surface-variant uppercase tracking-widest text-xs hover:text-on-surface transition-colors duration-500" href="#">Facilities</a>
         <a className="text-on-surface-variant uppercase tracking-widest text-xs hover:text-on-surface transition-colors duration-500" href="#">Use</a>
-        <a className="text-on-surface-variant uppercase tracking-widest text-xs hover:text-on-surface transition-colors duration-500" href="#">Reservation</a>
+        <a className="text-on-surface-variant uppercase tracking-widest text-xs hover:text-on-surface transition-colors duration-500" href="#">Book</a>
       </div>
 
       {/* Rectangular (0px radius) Primary Action Button */}

@@ -37,7 +37,7 @@ const PILLARS_DATA = [
 
 export default function FourPillarsMenu() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full h-[800px] border-y border-outline-variant/20">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full md:h-[800px] border-y border-outline-variant/20">
       {PILLARS_DATA.map((pillar, index) => {
         // We avoid putting a right border on the absolute last item using group selectors
         const borderClass = index !== PILLARS_DATA.length - 1 ? 'lg:border-r border-outline-variant/20' : '';
@@ -45,7 +45,7 @@ export default function FourPillarsMenu() {
         return (
           <article 
             key={pillar.id}
-            className={`relative group overflow-hidden ${borderClass} cursor-pointer block h-full`}
+            className={`relative group overflow-hidden ${borderClass} cursor-pointer block h-[350px] md:h-full`}
           >
             <Link to={`/${pillar.title.toLowerCase()}`} className="absolute inset-0 z-30"></Link>
             {/* Ambient Background Darkening - Fades out slightly on hover */}
@@ -59,7 +59,7 @@ export default function FourPillarsMenu() {
             />
             
             {/* Content Layer */}
-            <div className="absolute inset-0 flex flex-col justify-end p-12 z-20 pointer-events-none">
+            <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12 z-20 pointer-events-none">
               
               {/* Monolithic Header Structure */}
               <div className="mb-4">
