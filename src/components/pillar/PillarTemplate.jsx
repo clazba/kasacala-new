@@ -95,7 +95,7 @@ export function PillarTemplate({ pillarName, title, excerpt, introText, introIma
           </section>
 
           {/* Overlay Intro Image */}
-          <div className="absolute right-20 md:right-45 top-[26rem] md:top-[24rem] -translate-x-[35%] -translate-y-[65%] z-20 hidden md:block">
+          <div className="absolute right-20 md:right-45 top-[26rem] md:top-[24rem] -translate-x-[35%] -translate-y-[55%] z-20 hidden md:block">
             <div className="w-[360px] lg:w-[420px] aspect-[4/5] overflow-hidden shadow-2xl">
               <img
                 src={introImage}
