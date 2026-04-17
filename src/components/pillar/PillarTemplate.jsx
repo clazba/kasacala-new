@@ -10,7 +10,7 @@ export function PillarTemplate({ pillarName, title, excerpt, introText, introIma
         <section className="relative h-[90svh] flex items-end p-12 md:p-24 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img src={heroImage} alt={`${pillarName} Hero`} className="w-full h-full object-cover outline-none" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-90"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-75 brightness-90 contrast-90 saturate-75"></div>
           </div>
 
           <div className="relative z-10 max-w-4xl">
@@ -39,8 +39,8 @@ export function PillarTemplate({ pillarName, title, excerpt, introText, introIma
           </div>
 
           <div className="md:col-span-7 flex justify-end">
-            <div className="w-full aspect-video md:aspect-[4/3] bg-surface-highest overflow-hidden relative">
-              <img src={introImage} alt="Philosophy Visual" className="w-full h-full object-cover" />
+            <div className="w-3/4 aspect-video md:aspect-[4/3] bg-surface-highest overflow-hidden relative">
+              <img src={introImage} alt="Philosophy Visual" className="w-full h-full object-cover opacity-75 brightness-90 contrast-90 saturate-75" />
             </div>
           </div>
         </section>
@@ -57,7 +57,7 @@ export function PillarTemplate({ pillarName, title, excerpt, introText, introIma
               <div className={`w-full ${idx % 2 === 0 ? 'md:w-3/5 order-2 md:order-1' : 'md:w-2/5 order-2'}`}>
                 {idx % 2 === 0 ? (
                   <div className="aspect-video bg-surface-highest overflow-hidden">
-                    <img src={space.image} alt={space.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" />
+                    <img src={space.image} alt={space.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 opacity-75 brightness-90 contrast-90 saturate-75" />
                   </div>
                 ) : (
                   <div className="px-0 md:px-12">
@@ -74,7 +74,7 @@ export function PillarTemplate({ pillarName, title, excerpt, introText, introIma
                   </div>
                 ) : (
                   <div className="aspect-video bg-surface-highest overflow-hidden">
-                    <img src={space.image} alt={space.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" />
+                    <img src={space.image} alt={space.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 opacity-75" />
                   </div>
                 )}
               </div>

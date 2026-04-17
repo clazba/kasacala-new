@@ -17,7 +17,7 @@ export function TopNavBar() {
       </div>
 
       {/* Rectangular (0px radius) Primary Action Button */}
-      <button className="bg-primary text-on-primary px-8 py-3 font-label uppercase tracking-widest text-xs font-bold transition-all duration-500 hover:opacity-90">
+      <button className="bg-primary text-on-primary px-8 py-3 font-label uppercase tracking-widest text-xs font-bold transition-all duration-500 opacity-75 hover:opacity-90">
         Inquire
       </button>
     </nav>

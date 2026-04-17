@@ -26,7 +26,7 @@ export function BurgerMenu() {
         </Link>
         <button
           onClick={toggleMenu}
-          className="pointer-events-auto group flex flex-col justify-center items-center w-12 h-12 bg-background/80 backdrop-blur-md rounded-full border border-outline-variant/30 hover:bg-surface-variant transition-colors"
+          className="pointer-events-auto group flex flex-col justify-center items-center w-12 h-12 bg-background/60 backdrop-blur-md rounded-full border border-outline-variant/30 hover:bg-surface-variant transition-colors"
           aria-label="Toggle Menu"
         >
           <span className="material-symbols-outlined text-on-surface">{isOpen ? 'close' : 'menu'}</span>
@@ -35,7 +35,7 @@ export function BurgerMenu() {
 
       {/* Screen Overlay Menu */}
       <div
-        className={`fixed inset-0 z-40 bg-background/95 backdrop-blur-3xl transition-opacity duration-700 flex flex-col items-center justify-center ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        className={`fixed inset-0 z-40 bg-background/75 backdrop-blur-3xl transition-opacity duration-700 flex flex-col items-center justify-center ${isOpen ? 'opacity-70 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
       >
         <div className="flex flex-col items-center gap-10">
           {navLinks.map((link, idx) => (
@@ -43,7 +43,7 @@ export function BurgerMenu() {
               key={idx}
               to={link.path}
               onClick={() => setIsOpen(false)}
-              className="text-5xl md:text-7xl font-headline font-extralight text-on-background hover:text-primary transition-colors hover:italic"
+              className="text-3xl md:text-5xl font-headline font-extralight text-on-background hover:text-primary transition-colors hover:italic"
             >
               {link.name}
             </Link>

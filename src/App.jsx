@@ -11,6 +11,7 @@ import workFixedDesks from "./assets/work/fixed_desks.png";
 import workHotDesks from "./assets/work/hot_desks.jpg";
 import workPrivateBooths from "./assets/work/private_booth.jpg";
 import workMeetingRooms from "./assets/work/meeting_rooms.png";
+import playIntro from "./assets/play/spirit_play.png";
 import playRooftopPool from "./assets/play/rooftop_pool.png";
 import playGamesArea from "./assets/play/games_area.jpg";
 import playEventsRoom from "./assets/play/events_room.jpg";
@@ -38,10 +39,10 @@ const workPillarProps = {
   introText: "Work must not feel corporate. It should feel like a beautifully designed environment for serious creative focus.",
   introImage: workIntro,
   spaces: [
-    { title: "Fixed Desks", text: "Dedicated workstations constructed with premium natural materials for uninterrupted flow.", image: workFixedDesks },
+    { title: "Fixed Desks", text: "Dedicated workstations with fixed ethernet port. Constructed with premium natural materials for uninterrupted flow.", image: workFixedDesks },
     { title: "Hot Desks", text: "Flexible, light-filled environments designed for dynamic daily work routines.", image: workHotDesks },
     { title: "Private Booths", text: "Acoustically treated quiet zones for deep work and confidential calls.", image: workPrivateBooths },
-    { title: "Meeting Rooms", text: "High-spec boardrooms integrated with seamless presentation technology.", image: workMeetingRooms }
+    { title: "Meeting Rooms", text: "High-spec boardrooms with comfortable seating and integrated with seamless presentation technology.", image: workMeetingRooms }
   ],
   facilities: [
     "High speed WiFi", "Ethernet", "AI creative tools", "USB C docking stations", "Ergonomic chairs", "Printers"
@@ -56,7 +57,7 @@ const playPillarProps = {
   heroImage: "https://images.unsplash.com/photo-1534008897995-27a23e859048?auto=format&fit=crop&q=80&w=2000",
   excerpt: "Sunlit, chilled, social, energising, refined, fun led.",
   introText: "Play should feel elevated and tasteful, never childish. It is a vital frequency for the modern soul.",
-  introImage: "https://images.unsplash.com/photo-1506509653182-1c2ce1d6541f?auto=format&fit=crop&q=80&w=1000",
+  introImage: playIntro,
   spaces: [
     { title: "Rooftop Pool", text: "An architectural mirage suspended between the sky and the sea. Heated saltwater retreats.", image: playRooftopPool },
     { title: "Games Area", text: "Tactile, low-lit space where competition meets craftsmanship.", image: playGamesArea },
