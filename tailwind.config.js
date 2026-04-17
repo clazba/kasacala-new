@@ -90,10 +90,14 @@ export default {
       },
       spacing: {
         // Generous scale to mimic open air
+        12: '0.75rem',
         16: '1rem',
-        24: '1.5rem',
-        26: '2rem',
-        48: '3rem',
+        20: '1.5rem',
+        24: '2rem',
+        28: '2.5rem',
+        32: '3rem',
+        36: '3.5rem',
+        40: '4rem',
       },
       borderRadius: {
         // No Rounded Corners: The system is architectural and sharp.
