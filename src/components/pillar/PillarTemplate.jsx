@@ -29,58 +29,82 @@ export function PillarTemplate({ pillarName, title, excerpt, introText, introIma
           </div>
         </section>
 
-        {/* B. Intro Summary */}
-        <section className="px-12 md:px-24 py-32 bg-surface-low grid md:grid-cols-12 gap-12 items-center">
-          <div className="md:col-span-5">
-            <h2 className="font-headline text-4xl font-light mb-8 italic">Spirit of {pillarName}</h2>
-            <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
-              {introText}
-            </p>
-          </div>
+        <div className="relative">
+          {/* B. Intro Summary */}
+          <section className="px-20 md:px-32 pt-32 pb-40 bg-surface-low">
+            <div className="max-w-2xl">
+              <h2 className="font-headline text-4xl font-light mb-8 italic">
+                Spirit of {pillarName}
+              </h2>
+              <p className="text-lg text-on-surface-variant leading-relaxed">
+                {introText}
+              </p>
+            </div>
+          </section>
 
-          <div className="md:col-span-7 flex justify-end">
-            <div className="w-3/4 aspect-video md:aspect-[4/3] bg-surface-highest overflow-hidden relative">
-              <img src={introImage} alt="Philosophy Visual" className="w-full h-full object-cover opacity-75 brightness-90 contrast-90 saturate-75" />
+          {/* C. Spaces Section */}
+          <section className="px-16 md:px-24 pt-40 pb-32 space-y-32 md:pr-[26rem]">
+            <div className="mb-16">
+              <h2 className="font-label text-xs tracking-[0.24em] uppercase text-primary mb-2">
+                Spaces
+              </h2>
+              <div className="w-12 h-[1px] bg-primary/30"></div>
+            </div>
+
+            {spaces.map((space, idx) => (
+              <article key={idx} className="flex flex-col md:flex-row items-center gap-16">
+                <div className={`w-full ${idx % 2 === 0 ? 'md:w-3/5 order-2 md:order-1' : 'md:w-2/5 order-2'}`}>
+                  {idx % 2 === 0 ? (
+                    <div className="aspect-video overflow-hidden">
+                      <img
+                        src={space.image}
+                        alt={space.title}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 opacity-75 brightness-90 contrast-90 saturate-75"
+                      />
+                    </div>
+                  ) : (
+                    <div className="px-0 md:px-12">
+                      <h3 className="font-headline text-5xl mb-6">{space.title}</h3>
+                      <p className="font-body text-on-surface-variant leading-relaxed mb-6">
+                        {space.text}
+                      </p>
+                    </div>
+                  )}
+                </div>
+
+                <div className={`w-full ${idx % 2 === 0 ? 'md:w-2/5 order-1 md:order-2' : 'md:w-3/5 order-1'}`}>
+                  {idx % 2 === 0 ? (
+                    <div className="px-0 md:px-12">
+                      <h3 className="font-headline text-5xl mb-6">{space.title}</h3>
+                      <p className="font-body text-on-surface-variant leading-relaxed mb-6">
+                        {space.text}
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="aspect-video overflow-hidden">
+                      <img
+                        src={space.image}
+                        alt={space.title}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 opacity-75 brightness-90 contrast-90 saturate-75"
+                      />
+                    </div>
+                  )}
+                </div>
+              </article>
+            ))}
+          </section>
+
+          {/* Overlay Intro Image */}
+          <div className="absolute right-20 md:right-45 top-[26rem] md:top-[24rem] -translate-x-[35%] -translate-y-[65%] z-20 hidden md:block">
+            <div className="w-[360px] lg:w-[420px] aspect-[4/5] overflow-hidden shadow-2xl">
+              <img
+                src={introImage}
+                alt="Spirit visual"
+                className="w-full h-full object-cover opacity-80 brightness-90 contrast-90 saturate-75"
+              />
             </div>
           </div>
-        </section>
-
-        {/* C. Spaces Section */}
-        <section className="px-12 md:px-24 py-32 space-y-32">
-          <div className="mb-16">
-            <h2 className="font-label text-base tracking-widest uppercase text-primary mb-2">Spaces</h2>
-            <div className="w-12 h-[1px] bg-primary/30"></div>
-          </div>
-
-          {spaces.map((space, idx) => (
-            <article key={idx} className="flex flex-col md:flex-row items-center gap-16">
-              <div className={`w-full ${idx % 2 === 0 ? 'md:w-3/5 order-2 md:order-1' : 'md:w-2/5 order-2'}`}>
-                {idx % 2 === 0 ? (
-                  <div className="aspect-video bg-surface-highest overflow-hidden">
-                    <img src={space.image} alt={space.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 opacity-75 brightness-90 contrast-90 saturate-75" />
-                  </div>
-                ) : (
-                  <div className="px-0 md:px-12">
-                    <h3 className="font-headline text-5xl mb-6">{space.title}</h3>
-                    <p className="font-body text-on-surface-variant leading-relaxed mb-6">{space.text}</p>
-                  </div>
-                )}
-              </div>
-              <div className={`w-full ${idx % 2 === 0 ? 'md:w-2/5 order-1 md:order-2' : 'md:w-3/5 order-1'}`}>
-                {idx % 2 === 0 ? (
-                  <div className="px-0 md:px-12">
-                    <h3 className="font-headline text-5xl mb-6">{space.title}</h3>
-                    <p className="font-body text-on-surface-variant leading-relaxed mb-6">{space.text}</p>
-                  </div>
-                ) : (
-                  <div className="aspect-video bg-surface-highest overflow-hidden">
-                    <img src={space.image} alt={space.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 opacity-75" />
-                  </div>
-                )}
-              </div>
-            </article>
-          ))}
-        </section>
+        </div>
 
         {/* E. Use Section */}
         <section className="px-12 md:px-24 py-32 bg-surface">

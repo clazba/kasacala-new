@@ -13,7 +13,7 @@ export function SplashPage() {
 
         <header className="w-full flex justify-center pt-12 md:pt-20 px-8 z-10">
           <div className="flex items-center justify-center animate-fade-in-up">
-            <CasaKalaLogo className="text-on-surface h-12 md:h-28 w-auto object-contain" />
+            <CasaKalaLogo className="text-on-surface h-20 md:h-28 w-auto object-contain" />
           </div>
         </header>
 
