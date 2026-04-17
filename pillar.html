@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#cac6bd",
+                    "on-primary-fixed": "#341003",
+                    "on-primary-container": "#b77c66",
+                    "surface-tint": "#fbb79e",
+                    "primary-fixed": "#ffdbcf",
+                    "on-tertiary-fixed": "#241a0e",
+                    "outline-variant": "#484740",
+                    "inverse-on-surface": "#32302c",
+                    "tertiary-fixed": "#f4dfcb",
+                    "on-primary": "#4e2514",
+                    "primary-container": "#3e1808",
+                    "on-secondary-fixed-variant": "#4a4737",
+                    "surface-container-lowest": "#0f0e0a",
+                    "tertiary-fixed-dim": "#d7c3b0",
+                    "on-tertiary": "#3a2e21",
+                    "surface-variant": "#363530",
+                    "surface-container-highest": "#363530",
+                    "secondary-fixed-dim": "#cdc6b1",
+                    "inverse-primary": "#85513e",
+                    "background": "#141310",
+                    "secondary-fixed": "#e9e2cc",
+                    "on-error": "#690005",
+                    "on-background": "#e6e2db",
+                    "secondary": "#cdc6b1",
+                    "surface-container-high": "#2b2a26",
+                    "surface-container": "#21201b",
+                    "on-secondary-container": "#beb8a4",
+                    "on-tertiary-fixed-variant": "#524436",
+                    "tertiary-container": "#2c2115",
+                    "surface-bright": "#3b3934",
+                    "on-secondary-fixed": "#1e1c0e",
+                    "inverse-surface": "#e6e2db",
+                    "on-surface": "#e6e2db",
+                    "error-container": "#93000a",
+                    "tertiary": "#d7c3b0",
+                    "error": "#ffb4ab",
+                    "secondary-container": "#4d4939",
+                    "surface-dim": "#141310",
+                    "outline": "#939188",
+                    "on-secondary": "#343122",
+                    "on-error-container": "#ffdad6",
+                    "surface": "#141310",
+                    "on-primary-fixed-variant": "#693a28",
+                    "primary-fixed-dim": "#fbb79e",
+                    "primary": "#fbb79e",
+                    "surface-container-low": "#1d1c17",
+                    "on-tertiary-container": "#998776"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #141310;
+            color: #e6e2db;
+            font-family: 'Manrope', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .Newsreader { font-family: 'Newsreader', serif; }
+        .Inter { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Navigation Shell -->
+<nav class="fixed top-0 w-full sharp-0 bg-stone-950/60 backdrop-blur-xl z-50 flex justify-between items-center px-12 py-8 w-full">
+<div class="text-2xl font-light tracking-[0.2em] text-stone-200 Newsreader uppercase">CASA KALA</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-orange-200 border-b border-orange-200/30 pb-1 Inter uppercase tracking-[0.15em] text-xs hover:text-stone-100 transition-colors duration-500" href="#">Spaces</a>
+<a class="text-stone-400 Inter uppercase tracking-[0.15em] text-xs hover:text-stone-100 transition-colors duration-500" href="#">Facilities</a>
+<a class="text-stone-400 Inter uppercase tracking-[0.15em] text-xs hover:text-stone-100 transition-colors duration-500" href="#">Use</a>
+<a class="text-stone-400 Inter uppercase tracking-[0.15em] text-xs hover:text-stone-100 transition-colors duration-500" href="#">Reservation</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 Inter uppercase tracking-[0.15em] text-xs font-bold transition-all duration-500 hover:opacity-90">
+            Inquire
+        </button>
+</nav>
+<!-- SideNavBar (Hidden on desktop as per Shell Visibility rules for specific page focus, but kept for structural reference) -->
+<aside class="hidden lg:flex fixed left-0 top-0 h-screen w-64 bg-stone-950 border-r border-stone-800/20 flex-col p-8 z-40">
+<div class="mb-12">
+<div class="text-xl tracking-widest text-stone-200 Inter uppercase font-bold">ESTATE</div>
+<div class="text-[10px] tracking-widest text-stone-500 Inter uppercase">Málaga, Spain</div>
+</div>
+<div class="flex flex-col gap-6">
+<a class="flex items-center gap-4 text-orange-200 font-medium italic transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="pillar_light">wall_lamp</span>
+<span class="Inter uppercase text-xs tracking-widest">The Pillars</span>
+</a>
+<a class="flex items-center gap-4 text-stone-500 hover:bg-stone-900/50 p-2 -ml-2 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+<span class="Inter uppercase text-xs tracking-widest">Architecture</span>
+</a>
+<a class="flex items-center gap-4 text-stone-500 hover:bg-stone-900/50 p-2 -ml-2 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="Inter uppercase text-xs tracking-widest">Heritage</span>
+</a>
+<a class="flex items-center gap-4 text-stone-500 hover:bg-stone-900/50 p-2 -ml-2 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="gallery_thumbnail">gallery_thumbnail</span>
+<span class="Inter uppercase text-xs tracking-widest">Gallery</span>
+</a>
+</div>
+</aside>
+<main class="md:pl-64 min-h-screen">
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-end p-12 md:p-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Casa Kala Rooftop Pool" class="w-full h-full object-cover" data-alt="Modern minimalist rooftop infinity pool overlooking the Málaga coastline at sunset with warm limestone architecture and soft cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuJGOuUGXb64PuBaNfxlCSHj_D87NV4iZU_Vx0P03aZsS8y-IaIsOntso5dMmNNXYxlr8wC9nrhM2geiNUQqZT3ygfZqiVKPHmnUDhmhh5YctSUDBoSfyyRhVJ-RLDH6oPbc1yaucdTD9zJa0LsgPk-9cmYi-tLeRcv6FQBGA9x6l3kXjjZpf8y6OdxbqmFqtAOCKubQmc2StG5aRc2HF5ctHn_ZyYIVB0MiJjlro_nFcurUsh0iUSFoUfnN0RrMl2EFNaDLvWqrRO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<div class="absolute inset-0 bg-stone-950/20"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<span class="Inter text-xs tracking-[0.3em] uppercase text-primary mb-6 block">The Play Pillar</span>
+<h1 class="Newsreader text-6xl md:text-8xl font-extralight tracking-tight text-on-background mb-8 leading-[1.1]">
+                    The <span class="italic">Art</span> of Leisure
+                </h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant font-light leading-relaxed max-w-2xl">
+                    A curated sanctuary where sun-drenched afternoons dissolve into vibrant evenings. At Casa Kala, play is not an afterthought—it is a vital frequency for the modern soul.
+                </p>
+</div>
+</section>
+<!-- Use Case / Philosophy -->
+<section class="px-12 md:px-24 py-32 bg-surface-container-low grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5">
+<h2 class="Newsreader text-4xl font-light mb-8 italic">Recharge. Enjoy. Recalibrate.</h2>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed mb-8">
+                    Designed for our members to navigate the lighter side of the club. Whether it's a silent morning swim or a competitive night in the games lounge, the Play Pillar is your dedicated space to shed the weight of the work week.
+                </p>
+<div class="flex items-center gap-4 text-primary group cursor-pointer">
+<span class="Inter text-xs uppercase tracking-widest font-bold border-b border-primary/30 pb-1 group-hover:border-primary transition-all">Explore Membership</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="md:col-span-7 flex justify-end">
+<div class="w-full aspect-[4/5] md:w-4/5 bg-stone-900 overflow-hidden relative">
+<img alt="Sophisticated leisure at Casa Kala" class="w-full h-full object-cover" data-alt="High-end lifestyle photography for a Mediterranean social hub. A stylish group or individual in a sun-lit, minimal luxury environment focused on wellness and 'play'. Think poolside elegance, architectural framing, warm earthy tones, and a sense of refined, joyful leisure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmR1S548Q7ZcQ8dfSHGYbWob3jPFrcCigMjz80Al3mOwXxyHY2eRO1c39JdSnowkmnh-qLihKr33JGIpJWUFNcDb4Z6bGNf6McPASP7CFZ0qQSLGWJMEkXFKmE9kI7MkOk2EwRRdtLuiI8K6ALb1O2DP1t7yPBo-68QjIe3_dwz-Ys0j7VakPXl1Ey1kLUMrT6bWVZedZxu2VTusCY7ssCP7apfXc0I0MOYltJHw_ZMJR17LvC3lumGCUZSkj-5CJZCzvxRMtDtPD_"/>
+</div>
+</div>
+</section>
+<!-- Spaces Asymmetric Grid -->
+<section class="px-12 md:px-24 py-32 space-y-32">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-3/5 order-2 md:order-1">
+<div class="aspect-video bg-surface-container-highest overflow-hidden">
+<img alt="Rooftop Pool" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Aerial close-up of a perfectly still 30-meter infinity pool with pale stone tiles and Mediterranean sea in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6kHnASbkO_o5g8KyvM6fOWW9giD1dMdEIjb7atTvl7VIndiF_SeVk3Xe7EF2yR0ePtpqScdXICHCFtXd0bNqBopxLQfBR97iCFk-X0mrfI-AmtLmt3tLtXP-aaXhQnd56MUY-YwsTb0x1iHbclk-UUafaDIQKUvOSfAnvXO5gFCFY5UppMn7s5rpuPS1Joa7CW5YjwnEqw0vswnwCVvxCyEreY4MUXHoxu_M1FPiWPkT0rBx4LT0MoI-BFs1zIkaGgXpVntlxMyoK"/>
+</div>
+</div>
+<div class="w-full md:w-2/5 order-1 md:order-2">
+<span class="Inter text-[10px] tracking-widest uppercase text-secondary mb-4 block">Destination 01</span>
+<h3 class="Newsreader text-5xl mb-6">Rooftop Pool</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-6">
+                        An architectural mirage suspended between the sky and the sea. Our heated saltwater pool provides a panoramic retreat for meditative laps or social cooling.
+                    </p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-2/5">
+<span class="Inter text-[10px] tracking-widest uppercase text-secondary mb-4 block">Destination 02</span>
+<h3 class="Newsreader text-5xl mb-6">Games Area</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-6">
+                        A tactile, low-lit lounge where competition meets craftsmanship. Featuring custom-milled tables and a curated selection of analog and digital play.
+                    </p>
+</div>
+<div class="w-full md:w-3/5">
+<div class="aspect-video bg-surface-container-highest overflow-hidden">
+<img alt="Games Lounge" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Sleek modern billiards table made of dark walnut wood in a dimly lit sophisticated lounge with warm spotlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDftFkObZS0_VeFu_3QfaA3VaMCQz1CjoPzb6kqbwyyQGQjk3TRwdgE2k81mKh7Y9v7V9DZyaDx0OKUcbmvTkz1E8K6PYy8QDz5gbFJw5cJ20Dp9NAJeS3a1wMSuWlRKJ1lwEeiUkv9ESif0FJvp-fron3D17KU9QrV_HOR1x5NDUzfQQKc0CYu7yS0vR-CADFOITAfNobBCgoTS7eWO8bZqyISvR5DODgptqy2ktzKNUyDj4Qif0Em4GyqR8aeDeMbjLycJj_0cve"/>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-3/5 order-2 md:order-1">
+<div class="aspect-video bg-surface-container-highest overflow-hidden">
+<img alt="Projector Room" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Minimalist private cinema room with deep plush velvet seating and a massive glowing 4K screen displaying architectural art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkOaWKdsGGO0LfVnNpF9GcfBjTDGPObiiXD7QWFCzmouOSnbiJoyu25Xq0NtrjRW2QIQBcjJYqaACDGZDPizuIGag4mat2jOKHLVPZLbDc8Ap1vaVMLktjn3uxTuroeixLEhZdernJ4HDwfiirktY-_1dzMtiv2tUEd5lx4gTk6StsSvtw8tUXbgVm426VEMFBhC_g5H_18bQby-92NdJTKE230DQ7yf_Ntdwaclhu6aDNungIeHXxrAWfp_m16yuozEQHOjTxxaBW"/>
+</div>
+</div>
+<div class="w-full md:w-2/5 order-1 md:order-2">
+<span class="Inter text-[10px] tracking-widest uppercase text-secondary mb-4 block">Destination 03</span>
+<h3 class="Newsreader text-5xl mb-6">Projector Room</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-6">
+                        Immersive sensory experiences in a sound-proofed vault. From cinematic screenings to live sports and immersive digital gallery showcases.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Facilities List: Refined Editorial -->
+<section class="px-12 md:px-24 py-32 bg-surface-container-lowest">
+<div class="max-w-4xl mx-auto">
+<h4 class="Inter text-xs tracking-[0.25em] uppercase text-primary text-center mb-16">Amenities &amp; Technical Specs</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-12">
+<div class="group py-6 border-b border-outline-variant/20">
+<div class="flex justify-between items-baseline mb-2">
+<span class="Newsreader text-2xl group-hover:text-primary transition-colors">30m² Infinity Pool</span>
+<span class="Inter text-[10px] uppercase tracking-widest text-secondary-container">Heated Saltwater</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light">Architectural basin with underwater hi-fi and ozone purification.</p>
+</div>
+<div class="group py-6 border-b border-outline-variant/20">
+<div class="flex justify-between items-baseline mb-2">
+<span class="Newsreader text-2xl group-hover:text-primary transition-colors">Walnut Billiards</span>
+<span class="Inter text-[10px] uppercase tracking-widest text-secondary-container">Custom Milled</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light">Italian slate bed covered in bespoke charcoal felt.</p>
+</div>
+<div class="group py-6 border-b border-outline-variant/20">
+<div class="flex justify-between items-baseline mb-2">
+<span class="Newsreader text-2xl group-hover:text-primary transition-colors">4K Cinema Suite</span>
+<span class="Inter text-[10px] uppercase tracking-widest text-secondary-container">Laser Projection</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light">180-inch micro-perforated screen with Dolby Atmos.</p>
+</div>
+<div class="group py-6 border-b border-outline-variant/20">
+<div class="flex justify-between items-baseline mb-2">
+<span class="Newsreader text-2xl group-hover:text-primary transition-colors">Devialet Audio</span>
+<span class="Inter text-[10px] uppercase tracking-widest text-secondary-container">Whole-Space</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light">Immersive soundscapes curated daily by resident DJs.</p>
+</div>
+<div class="group py-6 border-b border-outline-variant/20">
+<div class="flex justify-between items-baseline mb-2">
+<span class="Newsreader text-2xl group-hover:text-primary transition-colors">Ping Pong</span>
+<span class="Inter text-[10px] uppercase tracking-widest text-secondary-container">Concrete Edition</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light">Monolithic outdoor table designed by Studio Kala.</p>
+</div>
+<div class="group py-6 border-b border-outline-variant/20">
+<div class="flex justify-between items-baseline mb-2">
+<span class="Newsreader text-2xl group-hover:text-primary transition-colors">Sky Lounge</span>
+<span class="Inter text-[10px] uppercase tracking-widest text-secondary-container">Social Hub</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light">Cocktail service and sunbeds with 360-degree views.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Synergy Bridge -->
+<section class="p-24 bg-surface flex flex-col items-center text-center">
+<div class="max-w-2xl">
+<span class="material-symbols-outlined text-4xl text-primary mb-8" data-icon="sync">sync</span>
+<h5 class="Newsreader text-4xl mb-6 italic">Where Play Meets Connection</h5>
+<p class="font-body text-on-surface-variant leading-relaxed mb-12">
+                    Leisure is the catalyst for genuine community. The casual atmosphere of the Play Pillar naturally bridges into our <span class="text-on-surface font-bold">Connect</span> programming—turning shared enjoyment into lasting alliances.
+                </p>
+<a class="inline-flex items-center gap-6 px-12 py-5 bg-primary-container text-primary Inter uppercase text-xs tracking-[0.2em] font-bold hover:bg-on-primary-fixed transition-all group" href="#">
+                    Next: Connect Pillar
+                    <span class="material-symbols-outlined text-sm group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full px-12 py-16 flex flex-col items-center gap-8 bg-stone-950">
+<div class="text-lg font-light text-stone-400 Newsreader tracking-widest uppercase">CASA KALA</div>
+<div class="flex gap-12">
+<a class="Inter text-[10px] tracking-widest uppercase text-stone-600 hover:text-orange-200 underline underline-offset-8 transition-all" href="#">Privacy</a>
+<a class="Inter text-[10px] tracking-widest uppercase text-stone-600 hover:text-orange-200 underline underline-offset-8 transition-all" href="#">Terms</a>
+<a class="Inter text-[10px] tracking-widest uppercase text-stone-600 hover:text-orange-200 underline underline-offset-8 transition-all" href="#">Press</a>
+<a class="Inter text-[10px] tracking-widest uppercase text-stone-600 hover:text-orange-200 underline underline-offset-8 transition-all" href="#">Contact</a>
+</div>
+<div class="text-stone-500 Inter text-[10px] tracking-widest uppercase">
+                © 2024 CASA KALA. ARCHITECTURAL MIRAGE.
+            </div>
+</footer>
+</main>
+<!-- Floating Action Button for Contact (Only shown if contextually relevant) -->
+<button class="fixed bottom-12 right-12 bg-primary text-on-primary w-16 h-16 flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform active:scale-95 group">
+<span class="material-symbols-outlined text-2xl group-hover:rotate-12 transition-transform" data-icon="chat_bubble" data-weight="fill" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+</button>
+</body></html>
